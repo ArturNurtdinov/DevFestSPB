@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DevFestSPB</string>
+    <string name="click">CLICK</string>
+    <string name="initial_text">0</string>
+    <string name="textview">TextView</string>
+    <string name="android">Android</string>
+    <string name="artur_Vasilov_ru">Артур Василов</string>
+    <string name="all_reports">Все доклады</string>
+    <string name="artur_Vasilov">Доклад Артура Василова</string>
+    <string name="konstantin_Tskhovrebov">Доклад Константина Цховребова</string>
+    <string name="evgeny_Shishkin">Доклад Евгения Шишкина</string>
+    <string name="ilya_Klimov">Доклад Ильи Климова</string>
+    <string name="initial_title">How we do some thing, if you see this the app crashed</string>
+    <string name="my_photo">My Photo</string>
+    <string name="artur_nurtdinov">Artur Nurtdinov</string>
+    <string name="software_engineering">Software Engineering</string>
+    <string name="spbpu_russia">SPBPU, Russia</string>
+    <string name="telegram_icon">telegram icon</string>
+    <string name="info_about_artur_nurtdinov">Artur Nurtdinov first year software engineering student of SPbPU. Artur has experience with java and know uses kotlin for android. He is also student of Android Academy SPb</string>
+    <string name="artur_nurtdinov_title">Kotlin-friendly Annotation Processing</string>
+    <string name="room_number_one">Room 1</string>
+    <string name="time_11_15">11:15</string>
+    <string name="date_of_report_in_about_authors">27 November</string>
+    <string name="artur_vasilov_menu">Артур Василов об ускорении Яндекс под Android.</string>
+    <string name="todays_reports">Доклады на сегодня</string>
+    <string name="konstantin_menu_text">Константин Цховребов о MotionLayout.</string>
+    <string name="evgeniy_menu_text">Евгений Шишкин об объединении двух приложений</string>
+    <string name="ilya_menu_text">Илья Климов о JavaScript и Angular</string>
+    <string name="about_author">Об авторе</string>
+    <string name="russia">russia</string>
+    <string name="example_text">Example Text</string>
+    <string name="fake_mail_menu_item">Fake mail</string>
+</resources>
