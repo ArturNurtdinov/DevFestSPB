@@ -7,8 +7,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
-import com.example.devfestspb.Report.Report
-import com.example.devfestspb.Report.ReportActivity
+import com.example.devfestspb.fakeList.RecyclerActivity
+import com.example.devfestspb.report.Report
+import com.example.devfestspb.report.ReportActivity
 
 
 class MainActivity : AppCompatActivity() {

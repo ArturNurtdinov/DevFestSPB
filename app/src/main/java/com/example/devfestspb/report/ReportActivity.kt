@@ -1,10 +1,8 @@
-package com.example.devfestspb.Report
+package com.example.devfestspb.report
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import com.example.devfestspb.MainActivity
@@ -13,14 +11,13 @@ import com.example.devfestspb.R
 
 class ReportActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         const val AUTHOR_KEY = "AUTHOR_KEY"
         const val TAG_KEY = "TAG_KEY"
         const val REPORT_KEY = "REPORT_KEY"
         const val TITLE_KEY = "TITLE_KEY"
     }
 
-    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
@@ -40,7 +37,6 @@ class ReportActivity : AppCompatActivity() {
             tagFirstView.setBackgroundColor(resources.getColor(R.color.colorBlue))
         else if (tag == "Android")
             tagFirstView.setBackgroundColor(resources.getColor(R.color.colorAccent))
-        tagFirstView.visibility = View.VISIBLE
         val reportView = findViewById<TextView>(R.id.report_field)
         reportView.text = rep
 

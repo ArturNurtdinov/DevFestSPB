@@ -1,4 +1,4 @@
-package com.example.devfestspb.Report
+package com.example.devfestspb.report
 
 data class Report(
         val id: Int,
