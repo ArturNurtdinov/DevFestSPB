@@ -17,7 +17,8 @@ class RecyclerActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val manager = LinearLayoutManager(this)
         recyclerView.layoutManager = manager
-        val adapter = Adapter(generateFakeValues(), genereateFakeTime())
+        val elementR = ElementR(generateFakeValues(), genereateFakeTime())
+        val adapter = Adapter(elementR)
         recyclerView.adapter = adapter
 
         recyclerView.addItemDecoration(DividerItemDecoration(this, manager.orientation))

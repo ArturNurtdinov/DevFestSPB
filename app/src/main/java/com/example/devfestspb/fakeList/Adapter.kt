@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.example.devfestspb.R
 
-class Adapter(private val values: MutableList<String>, private val time: MutableList<String>) :
+class Adapter(private val elements: ElementR) :
     RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     companion object{
@@ -18,7 +18,7 @@ class Adapter(private val values: MutableList<String>, private val time: Mutable
     }
 
 
-    override fun getItemCount(): Int = values.size
+    override fun getItemCount(): Int = elements.values.size
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         Log.d(ADAPTER_LOG, "onCreateViewHolder")
@@ -28,18 +28,18 @@ class Adapter(private val values: MutableList<String>, private val time: Mutable
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
         Log.d(ADAPTER_LOG, "onBindViewHolder for position $p1")
-        p0.textView?.text = values[p1]
-        p0.timeView?.text = time[p1]
+        p0.textView?.text = elements.values[p1]
+        p0.timeView?.text = elements.time[p1]
     }
 
     fun swapItems(fromPosition: Int, toPosition: Int) {
         if (fromPosition < toPosition) {
             for (i in fromPosition..toPosition) {
-                values[i] = values.set(i + 1, values[i])
+                elements.values[i] = elements.values.set(i + 1, elements.values[i])
             }
         } else {
             for (i in fromPosition..toPosition + 1) {
-                values[i] = values.set(i - 1, values[i])
+                elements.values[i] = elements.values.set(i - 1, elements.values[i])
             }
         }
         Log.d(MOVING_LOG, "moving item from $fromPosition to $toPosition")
@@ -49,10 +49,10 @@ class Adapter(private val values: MutableList<String>, private val time: Mutable
     private var size = 0
     fun removeItem(position: Int) {
         Log.d(DELETING_LOG, "removed item on position $position")
-        values.removeAt(position)
+        elements.values.removeAt(position)
         notifyItemRemoved(position)
-        notifyItemRangeChanged(position, values.size)
-        size = values.size
+        notifyItemRangeChanged(position, elements.values.size)
+        size = elements.values.size
         Log.d(DELETING_LOG, "after removing values size = $size")
     }
 
