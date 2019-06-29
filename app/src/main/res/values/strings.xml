@@ -12,10 +12,10 @@
     <string name="ilya_Klimov">Доклад Ильи Климова</string>
     <string name="initial_title">How we do some thing, if you see this the app crashed</string>
     <string name="my_photo">My Photo</string>
-    <string name="artur_nurtdinov">Artur Nurtdinov</string>
+    <string name="full_name">Artur Nurtdinov</string>
     <string name="software_engineering">Software Engineering</string>
     <string name="spbpu_russia">SPBPU, Russia</string>
-    <string name="telegram_icon">telegram icon</string>
+    <string name="twitter_icon">telegram icon</string>
     <string name="info_about_artur_nurtdinov">Artur Nurtdinov first year software engineering student of SPbPU. Artur has experience with java and know uses kotlin for android. He is also student of Android Academy SPb</string>
     <string name="artur_nurtdinov_title">Kotlin-friendly Annotation Processing</string>
     <string name="room_number_one">Room 1</string>
@@ -28,6 +28,6 @@
     <string name="ilya_menu_text">Илья Климов о JavaScript и Angular</string>
     <string name="about_author">Об авторе</string>
     <string name="russia">russia</string>
-    <string name="example_text">Example Text</string>
-    <string name="fake_mail_menu_item">Fake mail</string>
+    <string name="fake_menu_item">Fake list</string>
+    <string name="more">more</string>
 </resources>
